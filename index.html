@@ -8,34 +8,216 @@
 <body>
     <header>
         <nav>
-
+            <ul>
+                <li><a href="#ejemplos-semanticos">Semántica HTML</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+            </ul>
         </nav>
         <main>
             <section>
                 <h1>Ayrton Carriel</h1>
-                <h2>
-                    
-                </h2>
+                <h4>
+                    Estudiante de Ciencia de Datos
+                </h4>
             </section>
-            <section>
-                <h2>
-                    
-                </h2>
+            <section id="ejemplos-semanticos">
+                <h2>Recomendaciones de etiquetas semánticas</h2>
+                <p>Este párrafo incluye un enlace a mi portafolio personal: <a href="https://example.com" target="_blank" rel="noopener noreferrer">Visita mi sitio web</a>.</p>
+                <h3>Lista ordenada de habilidades</h3>
+                <ol>
+                    <li>Análisis de datos</li>
+                    <li>Programación en Python</li>
+                    <li>Visualización interactiva</li>
+                </ol>
+                <h3>Lista no ordenada de herramientas</h3>
+                <ul>
+                    <li>Jupyter Notebook</li>
+                    <li>Git</li>
+                    <li>Tableau</li>
+                </ul>
+                <h3>Tabla de competencias</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Competencia</th>
+                            <th>Nivel</th>
+                            <th>Experiencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Python</th>
+                            <td>Avanzado</td>
+                            <td>4 años</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Machine Learning</th>
+                            <td>Intermedio</td>
+                            <td>3 años</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Comunicación</th>
+                            <td>Avanzado</td>
+                            <td>5 años</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
-            <section>
-                <h2>
-                    
-                </h2>
+            <section id="multimedia">
+                <h2>Multimedia recomendada</h2>
+                <article>
+                    <h3>Mapa de Google Maps</h3>
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12678.123456789012!2d-58.3815925!3d-34.6037389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac0a8c6b7bd%3A0xedf5f68d007fa1bd!2sBuenos%20Aires!5e0!3m2!1ses!2sar!4v1700000000000"
+                            width="600"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <figcaption>Ubicación aproximada en Buenos Aires, útil para mostrar un lugar de trabajo o experiencia local.</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <h3>Imagen con placeholder</h3>
+                    <figure>
+                        <img src="https://picsum.photos/640/360" alt="Imagen de ejemplo de portafolio" width="640" height="360">
+                        <figcaption>Imagen de ejemplo usando Picsum como placeholder para un proyecto visual.</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <h3>Video de YouTube</h3>
+                    <figure>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://youtu.be/_eWl9BxPF2g?si=cUkwDpCG4bFKvT9g"
+                            title="Video de ejemplo de YouTube"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <figcaption>Video de YouTube recomendado: https://www.youtube.com/watch?v=dQw4w9WgXcQ</figcaption>
+                    </figure>
+                </article>
             </section>
-            <section>
-                <h2>
-                    
-                </h2>
+            <section id="formulario">
+                <h2>Contacto y consultas</h2>
+                <form method="POST" action="#">
+                    <fieldset>
+                        <legend>Información personal</legend>
+                        <div>
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Detalles de la consulta</legend>
+                        <div>
+                            <label for="area">Área de interés:</label>
+                            <select id="area" name="area" required>
+                                <option value="">-- Seleccione una opción --</option>
+                                <option value="datos">Ciencia de Datos</option>
+                                <option value="desarrollo">Desarrollo</option>
+                                <option value="consultoria">Consultoría</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tipo de solicitud</legend>
+                        <div>
+                            <label>
+                                <input type="radio" name="tipo" value="consulta"> Consulta general
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="tipo" value="propuesta"> Propuesta de proyecto
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="tipo" value="oferta"> Oferta de trabajo
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Servicios de interés (seleccione uno o más)</legend>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="servicios" value="analisis"> Análisis de datos
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="servicios" value="ml"> Machine Learning
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="servicios" value="visualizacion"> Visualización
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="servicios" value="mentoria"> Mentoría
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Mensaje</legend>
+                        <div>
+                            <label for="mensaje">Comentarios adicionales:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" cols="50" placeholder="Escriba su mensaje aquí..."></textarea>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <button type="submit">Enviar formulario</button>
+                        <button type="reset">Limpiar</button>
+                    </div>
+                </form>
             </section>
-            <section>
-                <h2>
-                    
-                </h2>                
+            <section id="testimonios">
+                <h2>Testimonios</h2>
+                
+                    <article>
+                    <blockquote>
+                        <p>"Ha sido un colaborador excepcional en cada proyecto en el que hemos trabajado juntos. Su dedicación y atención al detalle son incomparables."</p>
+                    </blockquote>
+                    <footer>
+                        <p><strong>María González</strong> - Directora de Proyectos</p>
+                        <p>María supervisó mis proyectos durante 3 años como Directora de Proyectos. Su confianza en mi trabajo y retroalimentación constructiva fueron fundamentales para mi desarrollo profesional en gestión de calidad y cumplimiento de deadlines.</p>
+                    </footer>
+                </article>
+
+                <article>
+                    <blockquote>
+                        <p>"Su capacidad para resolver problemas complejos bajo presión es admirable. Siempre entrega soluciones innovadoras y efectivas."</p>
+                    </blockquote>
+                    <footer>
+                        <p><strong>Carlos Rodríguez</strong> - Jefe de Desarrollo</p>
+                        <p>Trabajé bajo la supervisión de Carlos en el equipo de desarrollo durante 2 años. Su mentoría en arquitectura de software y prácticas de programación ágil fueron cruciales para mejorar mis habilidades técnicas y mi contribución al equipo.</p>
+                    </footer>
+                </article>
+
+                <article>
+                    <blockquote>
+                        <p>"Es una persona confiable, proactiva y siempre dispuesta a colaborar para el éxito del equipo. Una verdadera ventaja para cualquier organización."</p>
+                    </blockquote>
+                    <footer>
+                        <p><strong>Ana López</strong> - Coordinadora de Recursos Humanos</p>
+                        <p>Ana coordinó varios programas de capacitación en los que participé. Trabajamos juntos en iniciativas de mejora continua durante 18 meses, durante los cuales aprendí la importancia de la comunicación interna efectiva y el trabajo colaborativo entre departamentos.</p>
+                    </footer>
+                </article>
             </section>
         </main>
     </header>
