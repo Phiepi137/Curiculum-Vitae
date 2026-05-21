@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="StyleSheets\style.css">
 </head>
 <body>
     <header>
@@ -23,7 +24,7 @@
                 </h4>
             </section>
             <section id="ejemplos-semanticos">
-                <h2>Recomendaciones de etiquetas semánticas</h2>
+                <h2 class="subtitle">Recomendaciones de etiquetas semánticas</h2>
                 <p>Este párrafo incluye un enlace a mi portafolio personal: <a href="https://example.com" target="_blank" rel="noopener noreferrer">Visita mi sitio web</a>.</p>
                 <h3>Lista ordenada de habilidades</h3>
                 <ol>
@@ -66,7 +67,7 @@
                 </table>
             </section>
             <section id="multimedia">
-                <h2>Multimedia recomendada</h2>
+                <h2 class="subtitle">Multimedia recomendada</h2>
                 <article>
                     <h3>Mapa de Google Maps</h3>
                     <figure>
@@ -85,28 +86,20 @@
                 <article>
                     <h3>Imagen con placeholder</h3>
                     <figure>
-                        <img src="https://picsum.photos/640/360" alt="Imagen de ejemplo de portafolio" width="640" height="360">
+                        <img id="photo" src="https://picsum.photos/640/360" alt="Imagen de ejemplo de portafolio" width="640" height="360">
                         <figcaption>Imagen de ejemplo usando Picsum como placeholder para un proyecto visual.</figcaption>
                     </figure>
                 </article>
                 <article>
                     <h3>Video de YouTube</h3>
                     <figure>
-                        <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                            title="Video de ejemplo de YouTube"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/T7jSigbNX8g?si=x-2QU-Mz9s1qz2dd&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <figcaption>Video de YouTube recomendado: https://www.youtube.com/watch?v=dQw4w9WgXcQ</figcaption>
                     </figure>
                 </article>
             </section>
             <section id="formulario">
-                <h2>Contacto y consultas</h2>
+                <h2 class="subtitle">Contacto y consultas</h2>
                 <form method="POST" action="#">
                     <fieldset>
                         <legend>Información personal</legend>
@@ -186,43 +179,32 @@
                     </div>
                 </form>
             </section>
-            <section id="testimonios">
-                <h2>Testimonios</h2>
-                
-                    <article>
-                    <blockquote>
-                        <p>"Ha sido un colaborador excepcional en cada proyecto en el que hemos trabajado juntos. Su dedicación y atención al detalle son incomparables."</p>
-                    </blockquote>
-                    <footer>
-                        <p><strong>María González</strong> - Directora de Proyectos</p>
-                        <p>María supervisó mis proyectos durante 3 años como Directora de Proyectos. Su confianza en mi trabajo y retroalimentación constructiva fueron fundamentales para mi desarrollo profesional en gestión de calidad y cumplimiento de deadlines.</p>
-                    </footer>
-                </article>
-
-                <article>
-                    <blockquote>
-                        <p>"Su capacidad para resolver problemas complejos bajo presión es admirable. Siempre entrega soluciones innovadoras y efectivas."</p>
-                    </blockquote>
-                    <footer>
-                        <p><strong>Carlos Rodríguez</strong> - Jefe de Desarrollo</p>
-                        <p>Trabajé bajo la supervisión de Carlos en el equipo de desarrollo durante 2 años. Su mentoría en arquitectura de software y prácticas de programación ágil fueron cruciales para mejorar mis habilidades técnicas y mi contribución al equipo.</p>
-                    </footer>
-                </article>
-
-                <article>
-                    <blockquote>
-                        <p>"Es una persona confiable, proactiva y siempre dispuesta a colaborar para el éxito del equipo. Una verdadera ventaja para cualquier organización."</p>
-                    </blockquote>
-                    <footer>
-                        <p><strong>Ana López</strong> - Coordinadora de Recursos Humanos</p>
-                        <p>Ana coordinó varios programas de capacitación en los que participé. Trabajamos juntos en iniciativas de mejora continua durante 18 meses, durante los cuales aprendí la importancia de la comunicación interna efectiva y el trabajo colaborativo entre departamentos.</p>
-                    </footer>
-                </article>
-            </section>
+            <!-- sección de testimonios movida al footer principal -->
         </main>
     </header>
     <footer>
-
+        <h2 class="subtitle">Testimonios</h2>
+        <article>
+            <blockquote>
+                <p>"Ha sido un colaborador excepcional en cada proyecto en el que hemos trabajado juntos. Su dedicación y atención al detalle son incomparables."</p>
+            </blockquote>
+            <p><strong>María González</strong> - Directora de Proyectos</p>
+            <p>María supervisó mis proyectos durante 3 años como Directora de Proyectos. Su confianza en mi trabajo y retroalimentación constructiva fueron fundamentales para mi desarrollo profesional en gestión de calidad y cumplimiento de deadlines.</p>
+        </article>
+        <article>
+            <blockquote>
+                <p>"Su capacidad para resolver problemas complejos bajo presión es admirable. Siempre entrega soluciones innovadoras y efectivas."</p>
+            </blockquote>
+            <p><strong>Carlos Rodríguez</strong> - Jefe de Desarrollo</p>
+            <p>Trabajé bajo la supervisión de Carlos en el equipo de desarrollo durante 2 años. Su mentoría en arquitectura de software y prácticas de programación ágil fueron cruciales para mejorar mis habilidades técnicas y mi contribución al equipo.</p>
+        </article>
+        <article>
+            <blockquote>
+                <p>"Es una persona confiable, proactiva y siempre dispuesta a colaborar para el éxito del equipo. Una verdadera ventaja para cualquier organización."</p>
+            </blockquote>
+            <p><strong>Ana López</strong> - Coordinadora de Recursos Humanos</p>
+            <p>Ana coordinó varios programas de capacitación en los que participé. Trabajamos juntos en iniciativas de mejora continua durante 18 meses, durante los cuales aprendí la importancia de la comunicación interna efectiva y el trabajo colaborativo entre departamentos.</p>
+        </article>
     </footer>
 </body>
 </html>
