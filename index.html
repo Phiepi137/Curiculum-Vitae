@@ -10,174 +10,103 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#ejemplos-semanticos">Semántica HTML</a></li>
-                <li><a href="#multimedia">Multimedia</a></li>
-                <li><a href="#formulario">Formulario</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <main>
-            <section>
-                <h1>Ayrton Carriel</h1>
-                <h4>
-                    Estudiante de Ciencia de Datos
-                </h4>
+            <section class="hero">
+                <img id="photo" src="https://avatars.githubusercontent.com/u/258529687?v=4" alt="Foto de Ayrton Carriel">
+                <div>
+                    <h1>Ayrton Carriel</h1>
+                    <h4>Estudiante de Ciencia de Datos · Analista Junior</h4>
+                    <p class="muted">Ciudad: Daule, Guayas · Disponibilidad: Tiempo parcial / remoto</p>
+                    <p>Apasionado por convertir datos en decisiones accionables. Experiencia en limpieza de datos, visualización interactiva y modelos predictivos con Python. Busco oportunidades para colaborar en proyectos que unan estadística y producto.</p>
+                    <p style="margin-top:0.6rem"><strong>Contacto:</strong> <a href="mailto:ycarriel@fiec.espol.edu.ec">ycarriel@fiec.espol.edu.ec</a> · <a href="https://github.com/Phiepi137" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                </div>
             </section>
-            <section id="ejemplos-semanticos">
-                <h2 class="subtitle">Recomendaciones de etiquetas semánticas</h2>
-                <p>Este párrafo incluye un enlace a mi portafolio personal: <a href="https://example.com" target="_blank" rel="noopener noreferrer">Visita mi sitio web</a>.</p>
-                <h3>Lista ordenada de habilidades</h3>
-                <ol>
-                    <li>Análisis de datos</li>
-                    <li>Programación en Python</li>
-                    <li>Visualización interactiva</li>
-                </ol>
-                <h3>Lista no ordenada de herramientas</h3>
-                <ul>
-                    <li>Jupyter Notebook</li>
-                    <li>Git</li>
-                    <li>Tableau</li>
-                </ul>
-                <h3>Tabla de competencias</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Competencia</th>
-                            <th>Nivel</th>
-                            <th>Experiencia</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Python</th>
-                            <td>Avanzado</td>
-                            <td>4 años</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Machine Learning</th>
-                            <td>Intermedio</td>
-                            <td>3 años</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Comunicación</th>
-                            <td>Avanzado</td>
-                            <td>5 años</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+            <section id="perfil">
+                <h2 class="subtitle">Resumen profesional</h2>
+                <p>Estudiante de Ciencia de Datos con experiencia práctica en proyectos académicos y personales. Manejo de Python (pandas, scikit-learn), visualización con Plotly y dashboards interactivos. Interés en modelos supervisados, limpieza de datos y análisis exploratorio.</p>
             </section>
-            <section id="multimedia">
-                <h2 class="subtitle">Multimedia recomendada</h2>
-                <article>
-                    <h3>Mapa de Google Maps</h3>
-                    <figure>
-                        <iframe
-                            src="https://maps.google.com/maps?q=La%20Aurora%2C%20Daule%2C%20Guayas%2C%20Ecuador&z=15&output=embed"
-                            width="600"
-                            height="450"
-                            style="border:0;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                        <figcaption>Mapa centrado en La Aurora (Daule, Guayas). Ajusta `z` en la URL para cambiar el zoom.</figcaption>
-                    </figure>
-                </article>
-                <article>
-                    <h3>Imagen con placeholder</h3>
-                    <figure>
-                        <img id="photo" src="https://picsum.photos/640/360" alt="Imagen de ejemplo de portafolio" width="640" height="360">
-                        <figcaption>Imagen de ejemplo usando Picsum como placeholder para un proyecto visual.</figcaption>
-                    </figure>
-                </article>
-                <article>
-                    <h3>Video de YouTube</h3>
-                    <figure>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/T7jSigbNX8g?si=x-2QU-Mz9s1qz2dd&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <figcaption>Video de YouTube recomendado: https://www.youtube.com/watch?v=dQw4w9WgXcQ</figcaption>
-                    </figure>
-                </article>
-            </section>
-            <section id="formulario">
-                <h2 class="subtitle">Contacto y consultas</h2>
-                <form method="POST" action="#">
-                    <fieldset>
-                        <legend>Información personal</legend>
-                        <div>
-                            <label for="nombre">Nombre completo:</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
-                        </div>
-                        <div>
-                            <label for="email">Correo electrónico:</label>
-                            <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Detalles de la consulta</legend>
-                        <div>
-                            <label for="area">Área de interés:</label>
-                            <select id="area" name="area" required>
-                                <option value="">-- Seleccione una opción --</option>
-                                <option value="datos">Ciencia de Datos</option>
-                                <option value="desarrollo">Desarrollo</option>
-                                <option value="consultoria">Consultoría</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Tipo de solicitud</legend>
-                        <div>
-                            <label>
-                                <input type="radio" name="tipo" value="consulta"> Consulta general
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="radio" name="tipo" value="propuesta"> Propuesta de proyecto
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="radio" name="tipo" value="oferta"> Oferta de trabajo
-                            </label>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Servicios de interés (seleccione uno o más)</legend>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="servicios" value="analisis"> Análisis de datos
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="servicios" value="ml"> Machine Learning
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="servicios" value="visualizacion"> Visualización
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="servicios" value="mentoria"> Mentoría
-                            </label>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Mensaje</legend>
-                        <div>
-                            <label for="mensaje">Comentarios adicionales:</label>
-                            <textarea id="mensaje" name="mensaje" rows="5" cols="50" placeholder="Escriba su mensaje aquí..."></textarea>
-                        </div>
-                    </fieldset>
-                    <div>
-                        <button type="submit">Enviar formulario</button>
-                        <button type="reset">Limpiar</button>
+
+            <section id="educacion" class="card-grid">
+                <div>
+                    <h2 class="subtitle">Educación</h2>
+                    <h3>Licenciatura en Estadística (en curso)</h3>
+                    <p class="muted">Universidad Técnica de Guayaquil · 2022 — presente</p>
+                    <h3>Curso: Introducción a Ciencia de Datos</h3>
+                    <p class="muted">Plataforma: Coursera · 2023</p>
+                </div>
+                <div>
+                    <h2 class="subtitle">Habilidades</h2>
+                    <p>Python, Pandas, NumPy, scikit-learn, SQL, Git, Plotly, Tableau, Linux</p>
+                    <div style="margin-top:0.6rem">
+                        <div class="skill" aria-hidden><i style="width:80%"></i></div>
+                        <small class="muted">Competencias técnicas (nivel general)</small>
                     </div>
-                </form>
+                </div>
+            </section>
+
+            <section id="experiencia">
+                <h2 class="subtitle">Experiencia relevante</h2>
+                <article>
+                    <h3>Analista de Datos (Proyecto universitario)</h3>
+                    <p class="muted">Enero 2024 — Junio 2024</p>
+                    <p>Desarrollé un pipeline de limpieza y análisis de datos para un conjunto de encuestas, construyendo visualizaciones interactivas y un modelo de clasificación básico para segmentación de usuarios.</p>
+                </article>
+                <article>
+                    <h3>Asistente de investigación — Taller de visualización</h3>
+                    <p class="muted">Julio 2023 — Diciembre 2023</p>
+                    <p>Apoyo en la creación de dashboards con Plotly y mantenimiento de notebooks reproducibles para cursos de la facultad.</p>
+                </article>
+            </section>
+
+            <section id="proyectos" class="card-grid">
+                <div>
+                    <h2 class="subtitle">Proyectos</h2>
+                    <h3>Dashboard de análisis de ventas</h3>
+                    <p class="muted">Visualización interactiva con filtros, series temporales y KPIs clave.</p>
+                    <h3>Predicción de churn (mini-proyecto)</h3>
+                    <p class="muted">Modelo de clasificación con evaluación y explicación de características.</p>
+                </div>
+                <div>
+                    <h2 class="subtitle">Publicaciones / Repos</h2>
+                    <ul>
+                        <li><a href="#">github.com/Phiepi137/dashboard-ventas</a></li>
+                        <li><a href="#">github.com/Phiepi137/churn-prediction</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <h2 class="subtitle">Contacto</h2>
+                <div style="display:grid; grid-template-columns:1fr 320px; gap:1rem; align-items:start">
+                    <div>
+                        <form method="POST" action="#">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+                            <div style="margin-top:0.6rem">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <h3 class="subtitle">Ubicación</h3>
+                        <div class="map-container">
+                            <iframe src="https://maps.google.com/maps?q=La%20Aurora%2C%20Daule%2C%20Guayas%2C%20Ecuador&z=14&output=embed" width="100%" height="220" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p class="muted" style="margin-top:0.6rem">Basado en la región La Aurora / Daule — ubicación aproximada.</p>
+                    </div>
+                </div>
             </section>
             <!-- sección de testimonios movida al footer principal -->
         </main>
